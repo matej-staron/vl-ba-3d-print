@@ -49,7 +49,7 @@ Most common websites with a huge database of models are [Printables](https://www
 1. Check out [this Prusa guide](https://help.prusa3d.com/article/first-print-with-prusaslicer_1753)
    if you haven't already.
 1. Install [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/).
-1. Download the recommended [settings bundle](configuration/recommended_settings.ini) and import it
+1. Download the recommended [config bundle](configuration/recommended_config_bundle.ini) and import it
    to Slicer via `File` > `Import` > `Import Config Bundle`. This will do most of the configuration
    for you, so unless you want to do some tweaks, you should be ready to slice.
 
