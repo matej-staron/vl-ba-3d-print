@@ -15,6 +15,10 @@ You can usually find it in the kitchenette area on the 7th floor near the game r
         * [🔀 Switching the loaded filament](#-switching-the-loaded-filament)
         * [❄ Removing completed prints](#-removing-completed-prints)
         * [🧽 Cleaning the bed](#-cleaning-the-bed)
+    * [💡 Practical tips](#-practical-tips)
+        * [🔩 Screws](#-screws)
+            * [📏 Screw sizes & Taping sizes](#-screw-sizes--taping-sizes)
+            * [🗒️ Printing experience](#-printing-experience)
     * [💔 Common issues](#-common-issues)
         * [Print not sticking to the bed.](#print-not-sticking-to-the-bed)
         * [SD card is not detected](#sd-card-is-not-detected)
@@ -49,7 +53,8 @@ Most common websites with a huge database of models are [Printables](https://www
 1. Check out [this Prusa guide](https://help.prusa3d.com/article/first-print-with-prusaslicer_1753)
    if you haven't already.
 1. Install [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/).
-1. Download the recommended [config bundle](configuration/recommended_config_bundle.ini) and import it
+1. Download the recommended [config bundle](configuration/recommended_config_bundle.ini) and import
+   it
    to Slicer via `File` > `Import` > `Import Config Bundle`. This will do most of the configuration
    for you, so unless you want to do some tweaks, you should be ready to slice.
 
@@ -85,6 +90,29 @@ Most of the time, you simply:
 
 Occasionally clean the print bed with a paper wipe and a bit of isopropyl-alcohol. This usually
 helps if your print failed due to first layer not sticking to the bed.
+
+## 💡 Practical tips
+
+### 🔩 Screws
+
+Here's some advice for working with screws in your design.
+
+#### 📏 Screw sizes & Taping sizes
+
+🔗 [ISO Metric Thread dimensions](https://www.accu.co.uk/p/117-iso-metric-thread-dimensions)
+The diameter of the holes in your model should be "Tapping Drill (mm)".
+
+#### 🗒 Printing experience
+
+When slicing, set `Number of perimeters` at least to `4` so that the screws have enough support.
+
+Using `0.4 mm` nozzle and `0.2 mm` layer height, these are the actual printed hole dimensions:
+
+| Diameter<br>in model | Printed<br>diameter | Ratio | Fit with M3.5 Self-tapping<br>screw (samorezka) |
+|----------------------|---------------------|-------|-------------------------------------------------|
+| 2.9 mm               | 2.2 mm              | 0.76  | Difficult to screw, but it worked               |
+| 3.2 mm               | 2.9 mm              | 0.91  | Perfect fit                                     |
+| 4.0 mm               | 3.5 mm              | 0.88  | -                                               |
 
 ## 💔 Common issues
 
